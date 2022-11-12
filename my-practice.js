@@ -292,15 +292,219 @@
 // }
 // console.log(getCommonElements([1, 2, 4, 3], [2, 4]));
 
-function includes(array, value) {
-  // Change code below this line
+// function includes(array, value) {
+//   // Change code below this line
 
-  for (const word of array) {
-    if (word === value) {
-      return true;
-    }
-  }
-  return false;
-  // Change code above this line
-}
-console.log(includes([1, 2, 6], 2));
+//   for (const word of array) {
+//     if (word === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   // Change code above this line
+// }
+// console.log(includes([1, 2, 6], 2));
+
+// const clients = ["Mango", "Poly", "Ajax"];
+// const lastElementIndex = clients.length - 1;
+// // console.log(lastElementIndex);
+// // console.log(clients[lastElementIndex]);
+// console.log(clients.length - 1);
+// console.log(clients[clients.length - 1]);
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+// // const lastitemteg = apartment.tags.length - 1;
+// // Change code below this line
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// const lastTag = apartment.tags[apartment.tags.length - 1];
+
+// // Change code above this line
+
+// alert(lastTag);
+
+// OBJECT
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const keys = [];
+// const values = [];
+// // Change code below this line
+
+// for (const key in apartment) {
+//   console.log(key);
+//   console.log(apartment[key]);
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+
+// console.log(keys);
+// console.log(values);
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// console.log(values);
+
+// for (const key of keys) {
+//   values.push(apartment[key]);
+// }
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (let color of colors) {
+//   console.log(color.rgb);
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// завдання 1.01
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   for (let product of products) {
+//     if (product.name === productName) {
+//       return product.price;
+//     }
+//   }
+//   return null;
+//   // Change code above this line
+// }
+
+// console.log(getProductPrice("Radar"));
+// console.log(getProductPrice("Droid"));
+// console.log(getProductPrice("anDroid"));
+
+// завдання 1.02
+// Напиши функцію getAllPropValues(propName), яка приймає один параметр propName - ім'я (ключ) властивості. Функція повинна повернути масив всіх значень властивості з таким ім'ям з кожного об'єкта в масиві products. Якщо в об'єктах відсутні властивості з таким ім'ям, функція повинна повернути порожній масив.
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   let arrayProperties = [];
+
+//   for (const productName of products) {
+//     const keys = Object.keys(productName);
+
+//     // console.log(productName);
+
+//     if (keys.includes(propName)) {
+//       arrayProperties.push(productName[propName]);
+//     }
+//   }
+//   return arrayProperties;
+// }
+
+// console.log(getAllPropValues("name"));
+// console.log(getAllPropValues("quantity"));
+// console.log(getAllPropValues("price"));
+// console.log(getAllPropValues("category"));
+
+// завдання 1.03
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   //   let totalPrice = "";
+//   const arrayNames = [];
+
+//   for (const product of products) {
+//     // console.log(product.name);
+//     arrayNames.push(product.name);
+//     // console.log(arrayNames);
+
+//     if (arrayNames.includes(productName)) {
+//       return product.price * product.quantity;
+//     }
+//   }
+// }
+
+// console.log(calculateTotalPrice("Droid"));
+// console.log(calculateTotalPrice("Grip"));
+// console.log(calculateTotalPrice("Scanner"));
+// console.log(calculateTotalPrice("Blaster"));
+
+const forecast = {
+  today: {
+    low: 28,
+    high: 32,
+    icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+  },
+  tomorrow: {
+    low: 27,
+    high: 31,
+  },
+};
+// Change code below this line
+
+// const highToday = forecast.today.high;
+// const lowToday = forecast.today.low;
+// const todayIcon = forecast.today.icon;
+// const highTomorrow = forecast.tomorrow.high;
+// const lowTomorrow = forecast.tomorrow.low;
+// const tomorrowIcon = forecast.tomorrow.icon;
+const {
+  today: {
+    low: lowToday,
+    high: highToday,
+    icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+  },
+  tomorrow: {
+    low: lowTomorrow,
+    high: highTomorrow,
+    icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+  },
+} = forecast;
+
+console.log(lowToday, highToday, lowTomorrow, highTomorrow);
