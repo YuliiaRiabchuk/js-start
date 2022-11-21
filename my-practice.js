@@ -475,17 +475,17 @@
 // console.log(calculateTotalPrice("Scanner"));
 // console.log(calculateTotalPrice("Blaster"));
 
-const forecast = {
-  today: {
-    low: 28,
-    high: 32,
-    icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
-  },
-  tomorrow: {
-    low: 27,
-    high: 31,
-  },
-};
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
 // Change code below this line
 
 // const highToday = forecast.today.high;
@@ -494,17 +494,249 @@ const forecast = {
 // const highTomorrow = forecast.tomorrow.high;
 // const lowTomorrow = forecast.tomorrow.low;
 // const tomorrowIcon = forecast.tomorrow.icon;
-const {
-  today: {
-    low: lowToday,
-    high: highToday,
-    icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
-  },
-  tomorrow: {
-    low: lowTomorrow,
-    high: highTomorrow,
-    icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
-  },
-} = forecast;
+// const {
+//   today: {
+//     low: lowToday,
+//     high: highToday,
+//     icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   },
+//   tomorrow: {
+//     low: lowTomorrow,
+//     high: highTomorrow,
+//     icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   },
+// } = forecast;
 
-console.log(lowToday, highToday, lowTomorrow, highTomorrow);
+// console.log(lowToday, highToday, lowTomorrow, highTomorrow);
+
+// Використовуючи операцію rest, доповни код функції add()
+// таким чином, щоб вона приймала будь - яку кількість аргументів,
+// рахувала і повертала їх суму.
+
+// function add(...args) {
+//   console.log(args);
+//   let total = 0;
+
+//   for (let i = 0; i < args.length; i += 1) {
+//     total += args[i];
+
+//     // console.log(total);
+//   }
+
+//   return total;
+// }
+
+// function add(...args) {
+//   let total = 0;
+
+//   for (const arg of args) {
+//     total += arg;
+//   }
+//   return total;
+// }
+
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
+
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const newData = { completed, category, priority, ...data };
+//   return newData;
+// }
+
+// console.log(
+//   makeTask({
+//     category: "Homemade",
+//     priority: "Low",
+//     text: "Take out the trash",
+//   })
+// );
+
+// console.log(makeTask({ category: "Finance", text: "Take interest" }));
+
+// Функція addOverNum() рахує суму всіх аргументів.
+// Зміни параметри і тіло функції addOverNum() таким чином,
+// щоб вона рахувала суму тільки тих аргументів,
+// які більші за задане число.Це число повинно бути першим параметром
+// функції.
+
+// function addOverNum(firstNumber, ...args) {
+//   let total = 0;
+//   //   console.log(firstNumber);
+
+//   for (const arg of args) {
+//     if (arg > firstNumber) {
+//       total += arg;
+//     }
+//   }
+//   return total;
+//   // Change code above this line
+// }
+
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+
+// Функція findMatches() приймає довільну кількість аргументів.
+// Першим аргументом завжди буде масив чисел, а решта аргументів
+// будуть просто числами.
+
+// Доповни код функції таким чином, щоб вона повертала новий масив
+// matches, в якому будуть тільки ті аргументи, починаючи з
+// другого, які є в масиві першого аргументу.
+
+// Наприклад, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) повинна
+// повернути масив[1, 2], тому що тільки вони є в масиві першого
+// аргументу.
+
+// function findMatches([...arrayArgs], ...numberArgs) {
+//   const matches = [];
+
+//   //   console.log(arrayArgs);
+//   //   console.log(numberArgs);
+
+//   for (const arg of arrayArgs) {
+//     if (numberArgs.includes(arg)) {
+//       matches.push(arg);
+//     }
+//   }
+//   return matches;
+// }
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+// console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
+
+// Додай об'єкту bookShelf ще два методи, які поки що будуть
+// повертати просто рядки за аналогією з getBooks() і
+// addBook(bookName).
+
+// Метод removeBook(bookName) буде видаляти книгу за назвою.
+// Повертає рядок "Deleting book <назва книги>",
+// де < назва книги > - це значення параметра bookName.
+
+// Метод updateBook(oldName, newName) буде оновлювати назву книги
+// на нову.Повертає рядок "Updating book <стара назва> to <нова назва>",
+// де < стара назва > і < нова назва > - це значення
+// параметрів oldName і newName відповідно.
+
+// const bookShelf = {
+
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+// };
+
+// console.log(bookShelf.addBook("Haze"));
+// console.log(bookShelf.removeBook("Red sunset"));
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+
+// Доповни метод updateBook(oldName, newName) таким чином,
+//  щоб він змінював назву книги з oldName на newName у властивості
+// books.Використовуй indexOf() для того, щоб знайти потрібний елемент
+// масиву, і splice() для того, щоб замінити цей елемент.
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     const bookIndex = this.books.indexOf(oldName);
+//     this.books.splice(bookIndex, 1, newName);
+
+//     return this.books;
+//   },
+// };
+
+// // console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+
+//
+//
+//
+//
+//! ЦІКАВА ЗАДАЧА!!!!!
+//
+//
+//
+
+// TODO Виконай рефакторинг методів об'єкта
+// atTheOldToad таким чином, щоб вони працювали не з масивом рядків,
+// а з масивом об'єктів.
+
+// getPotions() - метод для отримання всього зілля.
+//  Повертає значення властивості potions.
+
+// addPotion(newPotion) - додає зілля newPotion (вже об'єкт) в
+// масив у властивості potions, але тільки, якщо такого зілля ще
+// немає в інвентарі.В іншому випадку повертається рядок.
+
+// removePotion(potionName) - видаляє об'єкт зілля з ім'ям
+// potionName з масиву у властивості potions.
+
+// updatePotionName(oldName, newName) - оновлює властивість name
+// об'єкта-зілля з назвою oldName на newName в масиві potions.
+
+//
+
+// Потрібно написати функцію, яка приймає 1 параметр key і буде перевіряти
+// чи має об'єкт  такий ключ - поверне true, інакше false
+
+// ?/* ********************************************************* */
+
+//? посилання на функцію
+
+// function makePizza() {
+//   return "Your pizza is being prepared, please wait.";
+// }
+
+// const result = makePizza();
+// const pointer = makePizza;
+
+// console.log(result);
+// console.log(pointer);
+
+// ?   автоперевірка
+
+/* // function changeEven(numbers, value) {
+//   const total = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       numbers[i] += value;
+//       total.push(numbers[i]);
+//     }
+//   }
+//   return total;
+// }
+
+const changeEven = (numbers, value) => {
+  const total = [];
+
+  numbers.forEach((number) => {
+    if (number % 2 === 0) {
+      total.push(number + value);
+    } else {
+      total.push(number);
+    }
+  });
+  return total;
+};
+
+console.log(changeEven([1, 2, 3, 4, 5], 10));
+console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+ */

@@ -104,12 +104,12 @@
 // if (2 > 1) {
 //   a = 2;
 //   const b = 3;
-//   // console.log(c)
+//    console.log(c)
 //   if (4 > 3) {
-//     // const a = 4;
-//     // const b = 5
-//     // const c = 6
-//     // console.log(a)
+// const a = 4;
+// const b = 5
+// const c = 6
+// console.log(a)
 //   }
 // }
 

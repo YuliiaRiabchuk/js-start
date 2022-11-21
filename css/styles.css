@@ -1,0 +1,16 @@
+.main__btn {
+  border: none;
+  border-radius: 12px;
+  background-color: dimgray;
+  color: antiquewhite;
+  padding: 60px 80px;
+  margin: 80px 80px;
+  font-size: 40px;
+}
+
+.main__btn:hover,
+.main__btn:focus {
+  border-radius: 50%;
+  background-color: antiquewhite;
+  color: brown;
+}
