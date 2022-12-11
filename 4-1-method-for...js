@@ -713,7 +713,7 @@ console.log(sortedByAscendingRating); */
 
 // ? автоперевірка
 
-const users = [
+/* const users = [
   {
     name: "Moore Hensley",
     email: "moorehensley@indexia.com",
@@ -782,7 +782,7 @@ const users = [
     balance: 2764,
     gender: "female",
   },
-];
+]; */
 
 /* Доповни функцію getNamesSortedByFriendCount(users) таким чином,
  щоб вона повертала масив імен користувачів, відсортований за 
@@ -817,14 +817,14 @@ console.log(getSortedFriends(users)); */
   стать яких (властивість gender) збігається зі значенням параметра
    gender. */
 
-const getTotalBalanceByGender = (users, gender) => {
-  return users
-    .filter((user) => user.gender === gender)
-    .map((user) => user.balance)
-    .reduce((acc, user) => acc + user, 0);
-};
+// const getTotalBalanceByGender = (users, gender) => {
+//   return users
+//     .filter((user) => user.gender === gender)
+//     .map((user) => user.balance)
+//     .reduce((acc, user) => acc + user, 0);
+// };
 
-console.log(getTotalBalanceByGender(users, "male"));
-console.log(getTotalBalanceByGender(users, "female"));
+// console.log(getTotalBalanceByGender(users, "male"));
+// console.log(getTotalBalanceByGender(users, "female"));
 
 // users.reduce((acc, user) => acc + user.balance, 0);

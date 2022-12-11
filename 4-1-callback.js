@@ -27,7 +27,7 @@
 
 // registerGuest("Mango", greet);
 
-// ! Прихована фукція
+// ! Неявна фукція
 // const genres = books.flatMap((book) => book.genres);
 // const genres1 = books.map((book) => book.genres);
 
