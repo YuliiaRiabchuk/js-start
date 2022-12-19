@@ -45,8 +45,10 @@ h2 {
   box-shadow: 10px 10px 5px 1px rgba(150, 187, 200, 0.75);
 }
 
-ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border: 2px solid rgb(17, 17, 16);
+  border-radius: 30px;
 }
