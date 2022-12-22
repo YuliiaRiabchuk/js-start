@@ -15,7 +15,7 @@
   color: brown;
 } */
 
-.text {
+/* .text {
   color: orange;
   font-size: 50px;
 }
@@ -51,4 +51,60 @@ h2 {
   background-color: cyan;
   border: 2px solid rgb(17, 17, 16);
   border-radius: 30px;
+} */
+
+/* ?модуль 7-1 ХРЕСТИКИ-НОЛИКИ */
+
+.container {
+  display: flex;
+  margin: 100px 50px 50px 50px;
+}
+
+.content {
+  width: 156px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  padding: 200px;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  border: 1px solid black;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.1s;
+}
+
+.item:hover {
+  background-color: rgb(199, 216, 234);
+}
+
+#parent,
+#child,
+#descendant {
+  margin: 16px;
+  padding: 16px;
+  border: 4px solid #212121;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#parent {
+  background-color: #673ab7;
+}
+
+#child {
+  background-color: #448aff;
+}
+
+#descendant {
+  background-color: #ff9800;
 }

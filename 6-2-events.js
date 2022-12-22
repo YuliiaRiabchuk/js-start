@@ -75,7 +75,7 @@
 
 // function OnSearch(evt) {
 //   evt.preventDefault();
-//   //   console.dir(evt.currentTarget.elements.queryValue);
+//   console.dir(evt.currentTarget.elements.queryValue);
 
 //   const { queryValue, selectValue } = evt.currentTarget.elements;
 //   console.log(queryValue.value);
@@ -106,8 +106,8 @@
 
 // function onInput(evt) {
 //   const query = evt.currentTarget.value;
-//   // "asd" => !true => false
-//   //query => !false => true
+// "asd" => !true => false
+//query => !false => true
 //   if (!query) {
 //     console.log("Пустий рядок");
 //   }

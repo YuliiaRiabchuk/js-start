@@ -257,25 +257,25 @@
 //   )
 //   .join("");
 
-// // console.log(markup);
+// console.log(markup);
 
 // list.insertAdjacentHTML("beforeend", markup);
-// // list.innerHTML = markup;
+// list.innerHTML = markup;
 
-// // ? ВИДЕЛЕННЯ ЕЛЕМЕНТІВ
+// ? ВИДЕЛЕННЯ ЕЛЕМЕНТІВ
 
 // console.dir(list.children);
-// // [...list.children].forEach((li) => li.remove());
+// [...list.children].forEach((li) => li.remove());
 
-// // ?видалення всіх елементів
-// // list.innerHTML = "";
+// ?видалення всіх елементів
+// list.innerHTML = "";
 
-// // ? АТРИБУТИ
+// ? АТРИБУТИ
 // const li = document.querySelector("li");
-// // const id = li.dataset.carid;
-// // console.dir(li);
-// // console.log(id);
-// // li.setAttribute("data-fromJs", true);
+// const id = li.dataset.carid;
+// console.dir(li);
+// console.log(id);
+// li.setAttribute("data-fromJs", true);
 // li.setAttribute("hidden", true);
-// // li.removeAttribute("hidden");
+// li.removeAttribute("hidden");
 // console.log(li.hasAttribute("hidden"));
