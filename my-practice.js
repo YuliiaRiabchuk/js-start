@@ -740,3 +740,815 @@ const changeEven = (numbers, value) => {
 console.log(changeEven([1, 2, 3, 4, 5], 10));
 console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
  */
+
+// import { galleryItems } from "./gallery-items.js";
+// // Change code below this line
+
+// console.log(galleryItems);
+
+// const gallery = document.querySelector(".gallery");
+
+// const imgMarkup = createMarkup(galleryItems);
+
+// gallery.insertAdjacentHTML("beforeend", imgMarkup);
+// gallery.addEventListener("click", onImgClick);
+
+// function createMarkup(items) {
+//   return items
+//     .map((item) => {
+//       return `<div class="gallery__item">
+//         <a class="gallery__link" href="${item.original}">
+//           <img class="gallery__image" data-source="${item.original}" data-pictureDesc="${item.description}" src="${item.preview}" alt="${item.description}" />
+//         </a>
+//       </div>`;
+//     })
+//     .join("");
+// }
+
+// function onImgClick(evt) {
+//   if (!evt.target.classList.contains("gallery__image")) {
+//     return;
+//   }
+//   evt.preventDefault();
+
+//   window.addEventListener("keydown", onEscBtnPress);
+
+//   const instance = basicLightbox.create(
+//     `<img src="${evt.target.dataset.source}" alt="${evt.target.dataset.picturedesc}" />`
+//   );
+//   instance.show();
+
+//   function onEscBtnPress(evt) {
+//     if (evt.code === "Escape") {
+//       instance.close();
+//       window.removeEventListener("keydown", onEscBtnPress);
+//     }
+//   }
+// }
+
+// const dogs = {
+//   Fido: "Mutt",
+//   Hunter: "Doberman",
+//   Snoopie: "Beagle",
+// };
+
+// const myDog = "Hunter";
+// const myBreed = dogs[myDog];
+// console.log(myBreed);
+// console.log(dogs);
+
+// const article = {
+//   title: "How to create objects in JavaScript",
+//   link: "https://www.freecodecamp.org/news/a-complete-guide-to-creating-objects-in-javascript-b0e2450655e8/",
+//   author: "Kaashan Hussain",
+//   language: "JavaScript",
+//   tags: "TECHNOLOGY",
+//   createdAt: "NOVEMBER 28, 2018",
+// };
+
+// const articleAuthor = article["author"];
+// const articleLink = article["link"];
+
+// const value = "title";
+// const valueLookup = article[value];
+
+// console.log("author");
+// ?автоперевірка switch
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+
+//   switch (password) {
+//     case null:
+//       message = "Canceled by user!";
+//       break;
+
+//     case ADMIN_PASSWORD:
+//       message = "Welcome!";
+//       break;
+
+//     default:
+//       message = "Access denied, wrong password!";
+//   }
+
+// if (password === null) {
+//   message = "Canceled by user!";
+// } else if (password === ADMIN_PASSWORD) {
+//   message = "Welcome!";
+// } else {
+//   message = "Access denied, wrong password!";
+// }
+
+// Change code above this line
+//   return message;
+// }
+
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+
+// function getShippingCost(country) {
+//   let message;
+// Change code below this line
+//   switch (country) {
+//     case "China":
+//       message = 100;
+//       break;
+//     case "Chile":
+//       message = 250;
+//       break;
+//     case "Australia":
+//       message = 170;
+//       break;
+
+//     case "Jamaica":
+//       message = 120;
+//       break;
+
+//     default:
+//       message = "Sorry, there is no delivery to your country";
+//   }
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(getShippingCost("Australia"));
+// console.log(getShippingCost("China"));
+// console.log(getShippingCost("Chile"));
+// console.log(getShippingCost("Jamaica"));
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+
+//   return substring;
+// }
+
+// console.log(getSubstring("Hello world", 3));
+// console.log(getSubstring("Hello world", 6));
+// console.log(getSubstring("Hello world", 8));
+// console.log(getSubstring("Hello world", 11));
+
+// const pizzaPalace = {
+//   pizzas: ["Supercheese", "Smoked", "Four meats"],
+//   // Change code below this line
+//   checkPizza(pizzaName) {
+//     return this.pizzas.includes(pizzaName);
+//   },
+//   order(pizzaName) {
+//     const isPizzaAvailable = this.checkPizza(pizzaName);
+
+//     if (!isPizzaAvailable) {
+//       return `Sorry, there is no pizza named «${pizzaName}»`;
+//     }
+
+//     return `Order accepted, preparing «${pizzaName}» pizza`;
+//   },
+//   // Change code above this line
+// };
+
+// console.log(pizzaPalace.order("Smoked"));
+// console.log(pizzaPalace.order("Four meats"));
+// console.log(pizzaPalace.order("Mike"));
+
+// ?
+// const fruits = ["apple", "peach", "pear", "banana"];
+
+// // Change code below this line
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+
+// console.log(lastElementIndex);
+
+// console.log(lastElement);
+
+// function getExtremeElements(array) {
+//   // return [array[0], array[array.length - 1]];
+
+//   const newArray = [];
+//   const firstEl = newArray.push(array[0]);
+//   const lastEl = newArray.push(array[array.length - 1]);
+//   return newArray;
+// }
+
+// console.log(getExtremeElements([1, 2, 3, 4, 5]));
+// console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+
+// function calculateEngravingPrice(message, pricePerWord) {
+//   return alert(message.split(" ").length * pricePerWord);
+
+//   // const a = message.split(" ");
+//   // const length = message.split(" ").length;
+//   // const totalPrice = length * pricePerWord;
+
+//   // console.log(a);
+//   // console.log(length);
+
+//   // return totalPrice;
+// }
+
+// console.log(
+//   calculateEngravingPrice(
+//     "Леся моя любовь ffff sdsdsd d d d нет аааа нічего важнее на свете",
+//     30
+//   )
+// );
+
+// function slugify(title) {
+//   // Change code below this line
+
+//   const slug = title.toLowerCase().split(" ").join(" - ");
+
+//   // console.log(slug);
+
+//   return slug;
+//   // Change code above this line
+// }
+
+// console.log(slugify("Arrays for begginers"));
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+//   const newArr = firstArray.concat(secondArray);
+//   return newArr.splice(0, maxLength);
+
+//   // Change code above this line
+// }
+
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
+
+// !!!! for
+// const arrayFriends = ["Mango", "Banana", "Kiwi", "Apple", "Poli"];
+
+// for (let i = 0; i <= arrayFriends.length - 1; i += 1) {
+//   console.log(i);
+//   console.log(arrayFriends[i]);
+//   arrayFriends[i] += "-1";
+// }
+
+// for (const friend of arrayFriends) {
+//   console.log(friend);
+// }
+
+// console.table(arrayFriends);
+
+// !!! total
+
+// const cart = [123, 44, 55, 67, 34, 90, 10];
+
+// let total = 0;
+
+// for (const value of cart) {
+//   total += value;
+// }
+
+// console.log(total);
+
+// !!! total
+
+// const numbers = [123, 44, 55, 67, 34, 90, 10, 11, 3];
+
+// let totalEvenNumb = 0;
+// let totalOddNumb = 0;
+
+// for (const number of numbers) {
+//   if (number % 2 === 0) {
+//     console.log(`${number}`, "-парне число");
+//     totalEvenNumb += number;
+//   } else {
+//     console.log(`${number}`, "-непарне число");
+//     totalOddNumb += number;
+//   }
+// }
+
+// console.log("сума парних чесел:", totalEvenNumb);
+// console.log("сума непарних чесел:", totalOddNumb);
+
+// !!! includes
+
+// const logins = ["Mango", "Banana", "Kiwi", "Apple", "Poli"];
+
+// const loginToFind = "Banana";
+// let message = "";
+
+// for (const login of logins) {
+//   console.log(login);
+//   if (login.includes(loginToFind)) {
+//     message = alert(`Користувач ${loginToFind} знайден!!!`);
+//     break;
+//   }
+
+//   message = alert(`Користувач ${loginToFind} НЕзнайден!!!`);
+// }
+
+// const message = logins.includes(loginToFind)
+//   ? `Користувач ${loginToFind} знайден!!!`
+//   : `Користувач ${loginToFind} НЕзнайден!!!`;
+// !!!
+
+// const tofindLogin = function (allLogins, findLogin) {
+//   for (const login of allLogins) {
+//     if (allLogins.includes(findLogin)) {
+//       return `Found ${findLogin}`;
+//     }
+//   }
+//   return `NOT Found ${findLogin}`;
+// };
+
+// !!
+
+// const tofindLogin = function (allLogins, findLogin) {
+//   return allLogins.includes(findLogin)
+//     ? `Користувач ${findLogin} знайден!!!`
+//     : `Користувач ${findLogin} НЕзнайден!!!`;
+// };
+
+// console.log(tofindLogin(logins, "Apple"));
+// console.log(tofindLogin(logins, "Kiwi"));
+// console.log(tofindLogin(logins, "Kiwi222"));
+
+// !! найменше число
+
+// const numbers = [123, 44, 55, 67, 34, 90, 10, 11, 3];
+
+// let smallestNumber = numbers[0];
+
+// for (const number of numbers) {
+//   console.log(number);
+
+//   if (number < smallestNumber) {
+//     smallestNumber = number;
+//   }
+// }
+
+// console.log("smallestNumber -", smallestNumber);
+
+// const smallestNumber = function (numbers) {
+//   let smallestNumber = numbers[0];
+//   for (const number of numbers) {
+//     if (number < smallestNumber) {
+//       smallestNumber = number;
+//     }
+//   }
+//   return smallestNumber;
+// };
+
+// console.log(smallestNumber([122, 33, 4, 56, 7654]));
+// console.log(smallestNumber([11, 233, 43, 6, 54, 2]));
+
+// ! найменше число + spred
+
+// const smallestNumber = Math.min(...numbers);
+// const biggiestNumber = Math.max(...numbers);
+// console.log("smallestNumber -", smallestNumber);
+// console.log("biggiestNumber -", biggiestNumber);
+
+//! ? повертає найдовше слово
+
+// function findLongestWord(string) {
+//   // Change code below this line
+//   const arrayWords = string.split(" ");
+//   console.log(arrayWords);
+//   let maxWord = "";
+
+//   for (let i = 0; i < arrayWords.length; i += 1) {
+//     const wordLength = arrayWords[i].length;
+
+//     console.log(wordLength);
+
+//     if (maxWord.length < wordLength) {
+//       maxWord = arrayWords[i];
+//     }
+//   }
+//   return maxWord;
+// }
+
+// // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+
+// ?
+// const arrayToString = ["Mango", "Banana", "Kiwi", "Apple", "Poli"];
+// const stringToArray = "Mango, Banana, Kiwi, Apple";
+
+// const toString = arrayToString.join(", ");
+// const toArray = stringToArray.split(" ");
+
+// console.log(toString);
+// console.log(toArray);
+
+// ?
+
+// const title = "Top 10 benefits of React framework";
+
+// const slug = title.toLowerCase().split(" ").join("-");
+
+// console.log(slug);
+
+// ? сума двох масивів
+
+// const array1 = [10, 23, 45, 22];
+// const array2 = [33, 12, 66, 494];
+
+// const numbers = array1.concat(array2);
+
+// let sum = 0;
+// for (const number of numbers) {
+//   sum += number;
+// }
+
+// console.log(sum);
+
+// ? метод slice
+
+// const cards = ["Card - 1", "Card - 2", "Card - 3", "Card - 4"];
+
+// Remove
+
+// const cardRemove = "Card - 3";
+
+// const indexCard = cards.indexOf(cardRemove);
+
+// cards.splice(indexCard, 1);
+// console.log(cards);
+
+// add
+
+// const addCard = "Card - 5";
+
+// cards.splice(4, 0, addCard);
+// cards.push(addCard);
+// cards.unshift(addCard);
+
+// cards.splice(0, 1, addCard);
+
+// console.log(cards);
+
+// ?
+
+// function createArrayOfNumbers(min, max) {
+//   const numbArr = [];
+
+//   for (let i = min; i < max; i += 1) {
+//     numbArr.push(i);
+//   }
+
+//   return numbArr;
+// }
+
+// console.log(createArrayOfNumbers(10, 20));
+
+// const myArray = [];
+
+// for (let i = 1; i < 6; i += 1) {
+//   console.log(i);
+//   myArray.push(i);
+// }
+
+// console.log(myArray);
+
+// ? ПСЕВДОЕЛЕМЕНТИ ARGUMENTS
+
+// const fn = function (a, b, ...arg) {
+//   console.log(arg);
+//   console.log(`${a}, ${b}, ${arg}`);
+// };
+
+// fn(123, 555, 8, 87, 436);
+// fn("hello", 33, 87, 9, 98);
+
+// ?
+
+// const fnAdd = function (...arg) {
+//   // console.log(arg);
+//   let total = 0;
+//   for (const el of arg) {
+//     total += el;
+//   }
+//   return total;
+// };
+
+// console.log(fnAdd(12, 33, 46, 7654, 21, 1));
+// console.log(fnAdd(123, 33, 5, 67, 1));
+
+// ? разное
+
+// const fnArray = function (array, ...args) {
+//   let equalElem = [];
+//   let newArray = [];
+//   let total = 0;
+//   let oddNumbers = [];
+//   let evenNumbers = [];
+//   let totalOdd = 0;
+//   let totalEven = 0;
+//   // вернуть совпаденія
+//   for (const elem of array) {
+//     if (args.includes(elem)) {
+//       equalElem.push(elem);
+//     }
+//   }
+//   console.log(equalElem);
+//   // вернуть total
+//   newArray = args.concat(array);
+//   console.log("NEW ARRAY", newArray);
+
+//   for (const elem of newArray) {
+//     total += elem;
+//   }
+//   console.log(total);
+
+//   // вернуть четное/нечетное
+//   // вернуть сумму четн/нечетн
+//   for (const elem of newArray) {
+//     if (elem % 2 !== 0) {
+//       oddNumbers.push(elem);
+//       totalOdd += elem;
+//     } else {
+//       evenNumbers.push(elem);
+//       totalEven += elem;
+//     }
+//   }
+//   console.log("Нечетное число", oddNumbers);
+//   console.log("четное число", evenNumbers);
+
+//   console.log("TOTAL Нечетное число", totalOdd);
+//   console.log("TOTAL четное число", totalEven);
+
+//   // вернуть max/min
+
+//   const maxNumber = Math.max(...newArray);
+//   const minNumber = Math.min(...newArray);
+
+//   console.log("maxNumber", maxNumber);
+//   console.log("minNumber", minNumber);
+// };
+
+// console.log(fnArray([1, 2, 3, 4, 5, 22], 1999, 22, 2, 12, 5));
+// console.log(fnArray([14, 55, 44, 12], 2, 3, 10, 12, 44, 55, 212));
+
+// ?
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+
+// for (key in apartment) {
+//   console.log(key);
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+// console.log(keys);
+// console.log(values);
+// ?
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+
+// for (let key of keys) {
+//   values.push(apartment[key]);
+// }
+
+// console.log(keys);
+// console.log(values);
+// ?
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (let color of colors) {
+//   console.log(color);
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+
+// ?
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   let array = [];
+
+//   for (const product of products) {
+//     const keys = Object.keys(product);
+
+//     console.log(product[propName]);
+
+//     if (keys.includes(propName)) {
+//       array.push(product[propName]);
+//     }
+//   }
+//   return array;
+// }
+
+// console.log(getAllPropValues("name"));
+// getAllPropValues("price");
+// getAllPropValues("category");
+
+// ! метод обьекта
+
+// const playlist = {
+//   name: "Мой плейліст",
+//   rating: 5,
+//   tracks: ["track-1", "track-2", "track-3"],
+
+//   changeName(newName) {
+//     this.name = newName;
+//   },
+
+//   addTrack(track) {
+//     this.tracks.push(track);
+//   },
+
+//   updateRating(newRating) {
+//     this.rating = newRating;
+//   },
+
+//   getTrackCount() {
+//     return this.tracks.length;
+//   },
+// };
+
+// playlist.changeName("new name");
+// playlist.addTrack("new track-1");
+// playlist.addTrack("new track-2");
+// playlist.addTrack("new track-3");
+// playlist.updateRating(4);
+// console.log(playlist.getTrackCount());
+
+// console.log(playlist);
+
+// ?
+
+// const feedback = {
+//   good: 5,
+//   neutral: 10,
+//   bad: 3,
+// };
+
+// const keys = Object.keys(feedback);
+
+// let totalFeedback = 0;
+
+// for (const key of keys) {
+//   console.log(key);
+//   console.log(feedback[key]);
+//   totalFeedback += feedback[key];
+// }
+
+// console.log(keys);
+
+// ?
+
+// const friends = [
+//   { name: "Mango", online: false },
+//   { name: "Kiwi", online: true },
+//   { name: "Poly", online: true },
+//   { name: "Ajex", online: false },
+// ];
+
+// console.table(friends);
+
+// шукаєм по імені
+
+const findFriendBeName = function (allFriends, name) {
+  for (const friend of allFriends) {
+    // console.log(friend.name);
+
+    if (friend.name === name) {
+      return `Знайшли ${name}`;
+    }
+  }
+  return `НЕМАє ${name}`;
+};
+
+// console.log(findFriendBeName(friends, "Poly"));
+// console.log(findFriendBeName(friends, "Chelsy"));
+
+// получаем все імена
+
+const getAllNames = function (allFriends) {
+  const names = [];
+  for (const friend of allFriends) {
+    // console.log(friend.name);
+    names.push(friend.name);
+  }
+  return names;
+};
+
+// console.log(getAllNames(friends));
+
+// Друзья онлайн
+
+const getOnline = function (allFriends) {
+  const onlineFriends = [];
+
+  for (const friend of allFriends) {
+    // console.log(friend.online);
+    if (friend.online) {
+      onlineFriends.push(friend);
+    }
+  }
+  return onlineFriends;
+};
+
+// console.log(getOnline(friends));
+
+// Друзья оффлайн
+
+// const getOffline = function (allFriends) {
+//   const offlineFriends = [];
+
+//   for (const friend of allFriends) {
+//     // console.log(friend.online);
+//     if (!friend.online) {
+//       offlineFriends.push(friend);
+//     }
+//   }
+//   return offlineFriends;
+// };
+
+// console.log(getOffline(friends));
+
+// Call back
+
+// const doMath = function (a, b, callback) {
+//   const result = callback(a, b);
+
+//   console.log(result);
+// };
+// const add = function (x, y) {
+//   return x + y;
+// };
+
+// const sub = function (x, y) {
+//   return x - y;
+// };
+
+// doMath(2, 3, add);
+// doMath(20, 3, sub);
+
+// ?фільтр масива
+
+// const filter = function (array, test) {
+//   const filteredArray = [];
+
+//   for (const el of array) {
+//     // console.log(el);
+//     const passed = test(el);
+
+//     if (passed) {
+//       filteredArray.push(el);
+//     }
+//   }
+//   return filteredArray;
+// };
+
+// const callback1 = function (value) {
+//   return value >= 3;
+// };
+
+// const result1 = filter([1, 2, 3, 4, 5], callback1);
+
+// console.log(result1);
+
+// const fruits = [
+//   { name: "apples", quantity: 200, isFresh: true },
+//   { name: "bananas", quantity: 300, isFresh: false },
+//   { name: "kiwi", quantity: 100, isFresh: true },
+// ];
+
+// const getFruits = function (fruit) {
+//   // console.log(fruit.name);
+//   return fruit.quantity >= 200;
+// };
+
+// const result2 = filter(fruits, getFruits);
+
+// console.log(result2);

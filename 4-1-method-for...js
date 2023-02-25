@@ -30,13 +30,13 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176])); */
 
 /* function filterArray(numbers, value) {
   const filteredNumbers = [];
-  // рефакторинг коду
+  рефакторинг коду
 
-  //   for (let i = 0; i < numbers.length; i += 1) {
-  //     if (numbers[i] > value) {
-  //       filteredNumbers.push(numbers[i]);
-  //     }
-  //   }
+    for (let i = 0; i < numbers.length; i += 1) {
+      if (numbers[i] > value) {
+        filteredNumbers.push(numbers[i]);
+      }
+    }
 
   numbers.forEach(function (namber, index) {
     if (namber > value) {
@@ -137,7 +137,7 @@ console.log(courses2); */
     genres: ["horror", "mysticism"],
   },
 ];
-// ! неявна (прихована функція)
+! неявна (прихована функція)
 
 const genres = books.flatMap((book) => book.genres);
 const genres1 = books.map((book) => book.genres);

@@ -25,7 +25,7 @@
 
 // span.textContent = "Hello World";
 
-// // прибирає стилі інлайново
+// прибирає стилі інлайново
 // list.style.listStyle = "none";
 
 // list.prepend(li);
@@ -279,3 +279,8 @@
 // li.setAttribute("hidden", true);
 // li.removeAttribute("hidden");
 // console.log(li.hasAttribute("hidden"));
+
+// const tehnologies = ["HTML", "CSS", "JavaScript", "React", "Node"];
+
+// const tehnologiesList = document.querySelector(".js-list");
+// console.log(tehnologiesList);

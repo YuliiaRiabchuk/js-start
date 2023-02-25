@@ -55,14 +55,14 @@ h2 {
 
 /* ?модуль 7-1 ХРЕСТИКИ-НОЛИКИ */
 
-.container {
+/* .container {
   display: flex;
   margin: 100px 50px 50px 50px;
 }
 
 .content {
   width: 156px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   margin: 0 auto;
   padding: 200px;
 }
@@ -107,4 +107,100 @@ h2 {
 
 #descendant {
   background-color: #ff9800;
+} */
+/* end */
+
+/* ? 9-1 модуль інтервал */
+/* .js-spam {
+  font-size: 30px;
+  font-weight: 600;
+  
+  padding: 30px;
+  margin-top: 50px;
+  width: 400px;
+}
+
+.js-test {
+  padding: 20px;
+  margin: 20px 30px;
+  font-weight: 600;
+} */
+
+/* ? CLOCK */
+body {
+  background-image: url(./../img/6231375.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.clock {
+  width: 550px;
+  height: 550px;
+  background-image: url(https://i.ibb.co/dBGxSK1/hiclipart-com-3.png);
+  background-color: rgba(237, 235, 235, 0.387);
+  background-size: cover;
+  border-radius: 50%;
+  position: relative;
+  /* left: 525px; */
+  margin: 0 auto;
+}
+.clock-arrow {
+  position: absolute;
+  background-color: black;
+  transform-origin: bottom;
+  transform: translateX(-50%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(231, 225, 225, 0.593);
+}
+.clock-center {
+  position: absolute;
+  background-color: black;
+  top: 268px;
+  left: 268px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.clock-seconds__arrow {
+  bottom: 50%;
+  left: 50%;
+  width: 5px;
+  height: 40%;
+}
+.clock-minutes__arrow {
+  bottom: 50%;
+  left: 50%;
+  width: 7px;
+  height: 33%;
+}
+.clock-hours__arrow {
+  bottom: 50%;
+  left: 50%;
+  width: 12px;
+  height: 24%;
+}
+.date {
+  width: 100px;
+  height: 100px;
+  color: black;
+}
+.calendar {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding-top: 60px;
+}
+.date-style {
+  display: flex;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 3px 3px 2px #cecbcd;
+}
+.digital-clock {
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 3px 2px #cecbcd;
+  font-weight: 900;
+  border-top: dashed rgb(178, 215, 216);
 }
