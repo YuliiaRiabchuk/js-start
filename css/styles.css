@@ -127,13 +127,13 @@ h2 {
 } */
 
 /* ? CLOCK */
-body {
+/* body {
   background-image: url(./../img/6231375.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
-.clock {
+/* .clock {
   width: 550px;
   height: 550px;
   background-image: url(https://i.ibb.co/dBGxSK1/hiclipart-com-3.png);
@@ -141,7 +141,7 @@ body {
   background-size: cover;
   border-radius: 50%;
   position: relative;
-  /* left: 525px; */
+  
   margin: 0 auto;
 }
 .clock-arrow {
@@ -203,4 +203,17 @@ body {
   text-shadow: 3px 3px 2px #cecbcd;
   font-weight: 900;
   border-top: dashed rgb(136, 246, 250);
+} */
+
+/* ? 10-2 modul Lord of the rings */
+
+ul {
+  list-style: none;
+}
+
+li {
+  border: 2px solid rgb(224, 124, 47);
+  margin-top: 20px;
+  width: 200px;
+  padding-left: 10px;
 }
